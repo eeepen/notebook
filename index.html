@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEEpen</title>
+	<link rel="icon" href="icon_32px.png">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+		
+		button {
+			font-family: sans-serif;
+		}
+
+        .top-bar {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-middle {
+            text-align: center;
+        }
+
+        .top-right {
+           text-align: right;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .section {
+            text-align: center;
+            margin-bottom: 20px;
+            width: 80%;
+            max-width: 900px;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .big-button {
+            width: 300px;
+            height: 200px;
+            background-color: #e0e0e0;
+            border: none;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .button-name {
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+
+        .button-description {
+            font-size: 1em;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-left">
+            <button disabled>Home</button>
+            <button onclick="window.location.href='about/'">About</button>
+        </div>
+        <div class="top-middle">Engineering Notebook</div>
+        <div class="top-right"><span style="color: #C00000;">EEEpen</span>.github.io</div>
+    </div>
+
+    <div class="content">
+
+        <div class="section">
+            <h2>14x</h2>
+            <div class="button-container">
+                <div class="big-button" onclick="window.location.href='eee143/'">
+                    <span class="button-name" style="color: #FF0000;">EEE 143</span>
+                    <span class="button-description">Switching Theory and <br> Digital Logic Design</span>
+                </div>
+                <div class="big-button" onclick="window.location.href='eee147/'">
+                    <span class="button-name" style="color: #B200FF;">EEE 147</span>
+                    <span class="button-description">Signals and Systems</span>
+                </div>
+                <div class="big-button" onclick="window.location.href='eee148/'">
+                    <span class="button-name" style="color: #FF006E;">EEE 148</span>
+                    <span class="button-description">EEE Lab 4</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>m2x</h2>
+            <div class="button-container">
+                <div class="big-button" onclick="window.location.href='math23/'">
+                    <span class="button-name" style="color: #00E500;">Math 23</span>
+                    <span class="button-description">Elementary Analysis 3</span>
+                </div>
+                <div class="big-button" onclick="window.location.href='math40/'">
+                    <span class="button-name" style="color: #CCAA00;">Math 40</span>
+                    <span class="button-description">Linear Algebra</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

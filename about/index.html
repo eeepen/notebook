@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEEpen</title>
+    <link rel="icon" href="icon_32px.png">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+        }
+
+        button {
+            font-family: sans-serif;
+        }
+
+        .top-bar {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-middle {
+            text-align: center;
+        }
+
+        .top-right {
+            text-align: right;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .author {
+            margin-bottom: 20px;
+        }
+
+        .joke-section {
+            width: 80%;
+            max-width: 900px;
+            margin-bottom: 20px;
+        }
+
+        .joke {
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .joke p {
+            margin: 0 0 10px 0;
+        }
+
+        .joke p:last-child {
+            margin-bottom: 0;
+        }
+
+        .joke-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .comic {
+            text-align: center;
+        }
+
+        .comic img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-left">
+            <button onclick="window.location.href='../'">Home</button>
+            <button disabled>About</button>
+        </div>
+        <div class="top-middle">Engineering Notebook</div>
+        <div class="top-right"><span style="color: #C00000;">EEEpen</span>.github.io</div>
+    </div>
+
+    <div class="content">
+        <div class="author">Website by <span style="color: #C00000;">Aren</span> 2025</div>
+
+        <div class="joke-section">
+
+            <div class="joke">
+                <div class="joke-title">Doctor's Visit</div>
+                <p>I went to the doctors recently.</p>
+                <p>He said: “Don’t eat anything fatty”.</p>
+                <p>I said: “What, like bacon and burgers?”</p>
+                <p>He said, “No. fatty don’t eat anything.”</p>
+            </div>
+
+            <div class="joke">
+                <div class="joke-title">Massive Snake</div>
+                <p>My pet snake was getting too large so I decided to sell and put an ad in the paper. This guy phones up and says "is it a big snake?"</p>
+                <p>"Its fucking massive" I replied.</p>
+                <p>"How many feet?" he asked.</p>
+                <p>"None" I said, "Its a fucking snake".</p>
+            </div>
+
+            <div class="joke">
+                <div class="joke-title">Master Carpenter</div>
+                <div class="comic">
+                    <img src="comic1.png">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>

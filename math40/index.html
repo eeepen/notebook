@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEEpen</title>
+	<link rel="icon" href="icon_32px.png">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .center-content {
+            text-align: center;
+        }
+
+        .right-content {
+            text-align: right;
+        }
+
+        .unit {
+            margin-top: 10px;
+            padding: 10px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .indent {
+            margin-left: 20px;
+        }
+
+        .topic-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .topic-label {
+            width: 30px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .topic-button {
+            padding: 10px 20px;
+            background-color: #E0E0E0;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-left: 10px;
+            width: 200px;
+            text-align: left;
+        }
+        .topic-button:hover {
+            background-color: #D0D0D0;
+        }
+
+        .indent .topic-container:first-child {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="left-content">
+            <button onclick="window.location.href='../'">Home</button>
+            <button disabled>All Topics</button>
+        </div>
+        <div class="center-content">
+			<div><span style="color: #CCAA00; font-weight: bold;">Math 40</span></div>
+            <div>Linear Algebra</div>
+        </div>
+        <div class="right-content">
+            <span style="color: #C00000;">EEEpen</span>.github.io
+        </div>
+    </div>
+
+    <div class="unit">
+        Unit 1
+        <div class="indent">
+            <div class="topic-container"><span class="topic-label">w1</span><button class="topic-button">Matrices &amp; Operations</button></div>
+            <div class="topic-container"><span class="topic-label">w2</span><button class="topic-button">Linear Systems</button></div>
+            <div class="topic-container"><span class="topic-label">w3</span><button class="topic-button">Matrix Inverse and Determinants</button></div>
+            <div class="topic-container"><span class="topic-label">w5</span><button class="topic-button">Vector Spaces</button></div>
+            <div class="topic-container"><span class="topic-label">++</span><button class="topic-button" style="color: #C00000">Dark Magic Tricks</button></div>
+			<div style="margin-left: 40px;">LE1: 2025-2-25</div>
+        </div>
+    </div>
+
+    <div class="unit">
+        Unit 2
+        <div class="indent">
+            <div class="topic-container"><span class="topic-label">w7</span><button class="topic-button">Spanning Sets &amp; Linear Independence</button></div>
+            <div class="topic-container"><span class="topic-label">w8</span><button class="topic-button">Basis, Dimension, &amp; Rank</button></div>
+            <div class="topic-container"><span class="topic-label">w9</span><button class="topic-button">Inner Products &amp; Orthogonal</button></div>
+            <div class="topic-container"><span class="topic-label">w10</span><button class="topic-button">Orthonormal &amp; <br> Gram-Schmidt</button></div>
+            <div class="topic-container"><span class="topic-label">++</span><button class="topic-button" style = "color: #C00000;">Dark Magic Tricks</button></div>
+			<div style="margin-left: 40px;">LE2: 2025-X-XX</div>
+        </div>
+    </div>
+
+    <div class="unit">
+        Unit 3
+        <div class="indent">
+            <div class="topic-container"><span class="topic-label">w11</span><button class="topic-button">Linear Transformations</button></div>
+            <div class="topic-container"><span class="topic-label">w12</span><button class="topic-button">Change of Basis</button></div>
+            <div class="topic-container"><span class="topic-label">w13</span><button class="topic-button">Eigens &amp; Diagonalization</button></div>
+            <div class="topic-container"><span class="topic-label">w15</span><button class="topic-button">Orthogonal Diagonalization</button></div>
+            <div class="topic-container"><span class="topic-label">++</span><button class="topic-button" style = "color: #C00000;">Dark Magic Tricks</button></div>
+			<div style="margin-left: 40px;">LE3: 2025-X-XX</div>
+        </div>
+    </div>
+
+</body>
+</html>

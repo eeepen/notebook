@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEEpen</title>
+	<link rel="icon" href="icon_32px.png">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-bar {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .center-content {
+            text-align: center;
+        }
+
+        .right-content {
+            text-align: right;
+        }
+
+        .unit {
+            margin-top: 10px;
+            padding: 10px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        .indent {
+            margin-left: 20px;
+        }
+
+        .topic-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .topic-label {
+            width: 30px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .topic-button {
+            padding: 10px 20px;
+            background-color: #E0E0E0;
+            color: black;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            margin-left: 10px;
+            width: 200px;
+            text-align: left;
+        }
+        .topic-button:hover {
+            background-color: #D0D0D0;
+        }
+
+        .indent .topic-container:first-child {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="left-content">
+            <button onclick="window.location.href='../'">Home</button>
+            <button disabled>All Topics</button>
+        </div>
+        <div class="center-content">
+			<div><span style="color: #FF006E; font-weight: bold;">EEE 148</span></div>
+            <div>EEE Lab 4</div>
+        </div>
+        <div class="right-content">
+            <span style="color: #C00000;">EEEpen</span>.github.io
+        </div>
+    </div>
+
+    <div class="unit">
+        Unit 1
+        <div class="indent">
+            <div class="topic-container"><span class="topic-label">w1</span><button class="topic-button">Circuits Review</button></div>
+            <div class="topic-container"><span class="topic-label">w2</span><button class="topic-button">Lowpass &amp; Bandpass Filters</button></div>
+            <div class="topic-container"><span class="topic-label">w3</span><button class="topic-button">Comparator &amp; Schmitt Triggers</button></div>
+            <div class="topic-container"><span class="topic-label">w4</span><button class="topic-button">Ramp Generator</button></div>
+            <div class="topic-container"><span class="topic-label">w5</span><button class="topic-button">Pulse Width Modulation</button></div>
+			<div style="margin-left: 40px;">DE1: 2025-3-3</div>
+        </div>
+    </div>
+
+    <div class="unit">
+        Unit 2
+        <div class="indent">
+            <div class="topic-container"><span class="topic-label">w6</span><button class="topic-button">Topic 6 Description</button></div>
+            <div class="topic-container"><span class="topic-label">w7</span><button class="topic-button">Topic 7 Description</button></div>
+        </div>
+    </div>
+
+</body>
+</html>
