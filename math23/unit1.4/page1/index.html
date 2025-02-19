@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EEEpen</title>
+	<link rel="icon" href="icon_32px.png">
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding-bottom: 20px;
+        }
+		
+		button {
+			font-family: sans-serif;
+		}
+
+        .top-bar {
+            background-color: #f0f0f0;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .top-bar-left {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .top-bar-middle {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+        }
+        .top-bar-middle-title {
+            font-weight: bold;
+        }
+        .top-bar-middle-nav {
+            display: flex;
+            gap: 10px;
+        }
+		
+		.top-bar-right {
+			text-align: right;
+		}
+
+        .question-container {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .question-image {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .question-text {
+            margin-bottom: 10px;
+        }
+
+        .answer-input {
+            padding: 5px;
+            border: 5px solid #ff0000;
+        }
+
+        .correct-answer {
+            border-color: #00ff00;
+        }
+
+        .spacer {
+            height: 10px;
+        }
+        .resource-links {
+            margin-top: 20px;
+            text-align: left;
+            padding-left: 20px;
+            display: flex;
+            width: fit-content;
+        }
+        .resource-links-column {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        .resource-links-column button {
+            width: 100%;
+            text-align: left;
+        }
+		.unit {
+			margin: 5px;
+		}
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <div class="top-bar-left">
+            <button onclick="window.location.href='../../../'">Home</button>
+            <button onclick="window.location.href='../../'">All Topics</button>
+        </div>
+        <div class="top-bar-middle">
+            <span class="top-bar-middle-title">Subject Name : Week : Topic Name</span>
+            <div class="top-bar-middle-nav">
+                <button disabled>Prev</button>
+                <span>1/3</span>
+                <button onclick="window.location.href='../page2/'">Next</button>
+            </div>
+        </div>
+        <div class="top-bar-right">
+			<div style="font-weight: bold;"><span style="color: #C00000;">EEEpen</span>.github.io</div>
+			<div>2025-1-22</div>
+        </div>
+    </div>
+
+    <div class="question-container">
+        <img class="question-image" src="question1.png" alt="Question Image">
+        <div class="question-text">1. Find the following</div>
+        <span class="unit">f(x,y)</span><input type="text" class="answer-input" oninput="checkAnswer(this, 'g0r0')"><span class="unit">.</span>
+        <div class="spacer"></div>
+
+        <span class="unit">fx(x,y)</span><input type="text" class="answer-input" oninput="checkAnswer(this, 'g0r0')"><span class="unit">.</span>
+        <div class="spacer"></div>
+
+        <span class="unit">fy(x,y)</span><input type="text" class="answer-input" oninput="checkAnswer(this, 'g0r0')"><span class="unit">.</span>
+        <div class="spacer"></div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="question-container">
+        <div class="question-text">2. Evaluate the following</div>
+        <span class="unit">f(49,0)</span><input type="text" class="answer-input" oninput="checkAnswer(this, '7')"><span class="unit">.</span>
+        <div class="spacer"></div>
+
+        <span class="unit">fx(49,0)</span><input type="text" class="answer-input" oninput="checkAnswer(this, '1/14')"><span class="unit">.</span>
+        <div class="spacer"></div>
+
+        <span class="unit">fy(49,0)</span><input type="text" class="answer-input" oninput="checkAnswer(this, '0')"><span class="unit">.</span>
+        <div class="spacer"></div>
+    </div>
+
+    <div class="spacer"></div>
+
+    <div class="question-container">
+        <div class="question-text">3. What's Aren's way to remember the LLA formula?</div>
+        <input type="text" class="answer-input" oninput="checkAnswer(this, 'f+fxx+fyy')" style="width: 300px;"><span class="unit">.</span>
+        <div class="spacer"></div>
+        <div class="question-text">f + fxx + fyy</div>
+    </div>
+
+    <div class="question-container">
+        <div class="question-text">4. What is the actual LLA formula?</div>
+        <input type="text" class="answer-input" oninput="checkAnswer(this, 'f(49,0)+fx(49,0)(x-49)+fy(49,0)(y-0)')">
+        <div class="spacer"></div>
+        <div class="question-text">f(49,0) + fx(49,0)(x-49) + fy(49,0)(y-0) <br> </div>
+        <div class="question-text" style="color: #C00000;">(always remember that it's clean numbers at this stage)</div>
+    </div>
+
+    <div class="question-container">
+        <div class="question-text">5. Plug-in everything, what is the expression?</div>
+        <span class="unit">L(x,y) = </span><input type="text" class="answer-input" oninput="checkAnswer(this, 'x+7^2/14')">
+    </div>
+
+    <div class="question-container">
+        <div class="question-text">6. Evaluate to simplest form</div>
+        <span class="unit">L(47.6,0.05) = <input type="text" class="answer-input" oninput="checkAnswer(this, '69/10')">
+    </div>
+
+    <div class="resource-links">
+        <div class="resource-links-column">
+            <div style="font-weight: normal;">Answers:</div>
+            <div class="spacer"></div>
+            <button onclick="window.open('answers/', '_blank')">Page</button>
+            <button onclick="window.open('https://www.youtube.com/@aren10', '_blank')">Youtube</button>
+            <div class="spacer"></div>
+            <div><span style="color: #C00000;">Aren</span> 2025</div>
+        </div>
+    </div>
+
+    <script>
+        function checkAnswer(inputField, correctAnswer) {
+            const userAnswer = inputField.value.toLowerCase();
+            const correct = userAnswer === correctAnswer.toLowerCase();
+            if (correct) {
+                inputField.classList.add("correct-answer");
+            } else {
+                inputField.classList.remove("correct-answer");
+            }
+        }
+    </script>
+
+</body>
+</html>
